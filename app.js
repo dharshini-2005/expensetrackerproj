@@ -4,7 +4,7 @@ const { v4: uuidv4 } = require("uuid");
 
 const app = express();
 const port = 3000;
-const mongourl = "mongodb+srv://dharshini001:dharshiniii@cluster0.onf7x.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+const mongourl = "mongodb+srv://dharshini001:dhar@cluster0.onf7x.mongodb.net/test";
 
 // Connect to MongoDB
 mongoose
@@ -130,3 +130,4 @@ app.delete("/api/expenses/:id", async (req, res) => {
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);
 });
+
